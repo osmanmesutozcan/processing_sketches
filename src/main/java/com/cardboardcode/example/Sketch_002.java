@@ -1,14 +1,15 @@
 package com.cardboardcode.example;
 
-import com.cardboardcode.util.IOUtils;
-
-import hype.*;
+import hype.H;
+import hype.HBox;
+import hype.HDrawable;
+import hype.HDrawablePool;
 import processing.core.PApplet;
 
 /**
  * Minimal example that draws a moving line
  */
-public class Sketch_001 extends PApplet {
+public class Sketch_002 extends PApplet {
     private static final Float SCALE_FACTOR = 0.8f;
 
     private float ROT_ = 45;
@@ -53,7 +54,7 @@ public class Sketch_001 extends PApplet {
                 )
                 .requestAll();
 
-        new IOUtils(this).saveHIRes(Sketch_001.class.getSimpleName(), 2);
+//        new IOUtils(this).saveVector(Sketch_001.class.getSimpleName());
         noLoop();
     }
 
@@ -64,7 +65,7 @@ public class Sketch_001 extends PApplet {
 
     public static void main(String[] args) {
         // Start the application
-        PApplet.main(Sketch_001.class.getName());
+        PApplet.main(Sketch_002.class.getName());
 
     }
 
